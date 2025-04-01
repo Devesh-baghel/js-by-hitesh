@@ -22,14 +22,24 @@ const obj3= {5:"a",6:'b' };
 //const obj4 = Object.assign({},obj1,obj2,obj3);
 //console.log(obj4);
 const obj4 = {...obj1,...obj2,...obj3};
-console.log(obj4);
+// console.log(obj4);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(Object.hasOwnProperty('isLoggedIn'));
+// console.log(Object.hasOwnProperty('isLoggedIn'));
 
+const course = {
+    courseName: "js-in-hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
 
+// const {courseInstructor} = course
+// console.log(courseInstructor);
 
+const {courseInstructor:Instructor} = course
 
+console.log(Instructor);
 
+ 
