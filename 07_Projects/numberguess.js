@@ -41,12 +41,15 @@ function updateGuess(){
 
 function playGame(guess){
       if(guess<randomNumber){
-        result.innerHTML=`The  number ${guess} is too low`;
+        result.style.color='red';
+        result.innerHTML=`The  number ${guess} is too low!`;
       }
       else if(guess>randomNumber){
+        result.style.color='red';
         result.innerHTML=`The number ${guess} is too high`
       }
       else if(guess===randomNumber){
+        result.style.color='rgb(0,255,0)';
         result.innerHTML = `You Won ! correct guess is ${randomNumber}. Game Over`
       
       }
