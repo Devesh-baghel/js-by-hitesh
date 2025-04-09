@@ -23,6 +23,3 @@ const userOne = new User('devesh',12,true)
 const userTwo = User('chai Aur codea',11,false)
 console.log(userOne.constructor);
 
-// when we use new keyword an empty object is created
-// a constructor function is called because of new keyword .
-//it packes the arguments in new and injected in this keyword
