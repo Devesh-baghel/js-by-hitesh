@@ -1,3 +1,8 @@
+//A Promise is like a guarantee that something will happen in the future — either it will succeed (✅) or fail (❌). It’s a way to handle asynchronous operations (things that take time, like loading data from the internet).
+
+//The problem is that asynchronous code doesn't run immediately — it runs later, after a delay (like fetching data, reading a file, etc.).
+
+//If we try to use the result of an async method before it finishes, it just doesn't work properly. We'd get undefined, or errors, or weird behavior.
 const promise1 = new Promise(function(resolve,reject){
     //Do an async Task
     //DB calls , cryptography , network
